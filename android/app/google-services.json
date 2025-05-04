@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "162224605506",
+    "project_id": "flutterprectis",
+    "storage_bucket": "flutterprectis.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162224605506:android:6e63fbf8af1d35d89360db",
+        "android_client_info": {
+          "package_name": "com.example.firebasecli"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe6_4LGzdMlYvIIUvMusGHhmdEUwpYAAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162224605506:android:5b778c04355dd1219360db",
+        "android_client_info": {
+          "package_name": "com.example.gets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe6_4LGzdMlYvIIUvMusGHhmdEUwpYAAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
