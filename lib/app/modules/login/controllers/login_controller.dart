@@ -53,4 +53,51 @@ class LoginController extends GetxController {
       log('======>Error ${error}');
     });
   }
+
+
+  // loginWithGoogle() async {
+  //   ShowToastDialog.showLoader("please_wait".tr);
+  //   await signInWithGoogle().then((value) {
+  //     ShowToastDialog.closeLoader();
+  //     if (value != null) {
+  //       if (value.additionalUserInfo!.isNewUser) {
+  //         DriverUserModel userModel = DriverUserModel();
+  //         userModel.id = value.user!.uid;
+  //         userModel.email = value.user!.email;
+  //         userModel.fullName = value.user!.displayName;
+  //         userModel.profilePic = value.user!.photoURL;
+  //         userModel.loginType = Constant.googleLoginType;
+  //
+  //         ShowToastDialog.closeLoader();
+  //         Get.to(() => const SignupView(), arguments: {
+  //           "userModel": userModel,
+  //         });
+  //       }
+
+  // Future<UserCredential?> signInWithGoogle() async {
+  //   try {
+  //     final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn().catchError((error) {
+  //       ShowToastDialog.closeLoader();
+  //       ShowToastDialog.showToast("something_went_wrong".tr);
+  //       return null;
+  //     });
+  //
+  //     // Obtain the auth details from the request
+  //     final GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
+  //
+  //     // Create a new credential
+  //     final credential = GoogleAuthProvider.credential(
+  //       accessToken: googleAuth?.accessToken,
+  //       idToken: googleAuth?.idToken,
+  //     );
+  //
+  //     // Once signed in, return the UserCredential
+  //     return await FirebaseAuth.instance.signInWithCredential(credential);
+  //   } catch (e) {
+  //     debugPrint(e.toString());
+  //   }
+  //   return null;
+  //   // Trigger the authentication flow
+  // }
+
 }

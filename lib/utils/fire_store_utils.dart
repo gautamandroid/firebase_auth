@@ -134,4 +134,29 @@ class FireStoreUtils {
     return addDataList;
   }
 
+  // Future<List<UserModel>> searchUsersByName(String searchQuery) async {
+  //   List<UserModel> userList = [];
+  //   try {
+  //     final fireStore = FirebaseFirestore.instance;
+  //
+  //     final querySnapshot = await fireStore
+  //         .collection(CollectionName.users) // or drivers
+  //         .where(
+  //       'name',
+  //       isGreaterThanOrEqualTo: searchQuery,
+  //       isLessThan: '$searchQuery\uf8ff',
+  //     )
+  //         .orderBy('name')
+  //         .get();
+  //
+  //     for (var doc in querySnapshot.docs) {
+  //       userList.add(UserModel.fromJson(doc.data()));
+  //     }
+  //   } catch (error) {
+  //     log("Search error: $error");
+  //   }
+  //   return userList;
+  // }
+
+
 }
